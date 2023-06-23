@@ -6,8 +6,9 @@ const Winloss = props => {
   const win = isWin
     ? 'https://assets.ccbp.in/frontend/react-js/won-game-img.png'
     : 'https://assets.ccbp.in/frontend/react-js/lose-game-img.png'
-  const status = isWin ? 'won' : 'loss'
+  const status = isWin ? 'Won' : 'Loss'
   const best = isWin ? 'Best Score' : 'Score'
+  const img = isWin ? 'win' : 'loss'
 
   return (
     <div>
@@ -22,7 +23,7 @@ const Winloss = props => {
         </button>
       </div>
       <div>
-        <img alt={status} src={win} />
+        <img alt={img} src={win} />
       </div>
     </div>
   )
